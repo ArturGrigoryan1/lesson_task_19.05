@@ -1,0 +1,13 @@
+{
+	"Path": "gh-action-test",
+	"Main": true,
+	"Dir": "/Users/bhamail/sonatype/community/go/nancy-gh-action-test",
+	"GoMod": "/Users/bhamail/sonatype/community/go/nancy-gh-action-test/go.mod",
+	"GoVersion": "1.15"
+}
+{
+	"Path": "github.com/gophish/gophish",
+	"Version": "v0.2.0",
+	"Time": "2016-11-14T02:54:38Z",
+	"GoMod": "/Users/bhamail/go/pkg/mod/cache/download/github.com/gophish/gophish/@v/v0.2.0.mod"
+}
