@@ -27,7 +27,7 @@ jobs:
       
       - name: 'Run test'
         run : |
-          go run hello-world_test.go
+          go run hello-world.go
 
 
 
