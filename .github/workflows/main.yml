@@ -23,7 +23,7 @@ jobs:
 
       - name: 'Unit Test'
         run: |
-          go test .
+          go test hello-world_test.go
       
       - name: 'Run test'
         run : |
