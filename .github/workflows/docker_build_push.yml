@@ -7,10 +7,7 @@ jobs:
   build-push:
     runs-on: ubuntu-latest
 
-    steps:
-      - name: 'Check Previous Job Status'
-        if: success()
-        
+    steps:        
       - name: 'Checkout'
         uses: actions/checkout@v4
       - name: 'Login to Docker Hub'
