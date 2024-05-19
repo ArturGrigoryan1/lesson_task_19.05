@@ -13,4 +13,5 @@ jobs:
     needs:
       - build_and_test
     uses: ArturGrigoryan1/lesson_task_19.05/.github/workflows/docker_build_push.yml@main
+    secrets: inherit
     
