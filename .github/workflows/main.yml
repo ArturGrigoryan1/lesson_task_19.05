@@ -24,4 +24,18 @@ jobs:
       - name: 'Unit Test'
         run: |
           go test .
+      
+      - name: 'Run test'
+        run : |
+          go run hello-world_test.go
+
+
+
+
+
+
+
+
+
+
   
