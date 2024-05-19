@@ -1,1 +1,31 @@
+name: 'Test-run'
 
+on:
+  workflow_call:
+
+jobs:
+  test-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout'
+        uses: actions/checkout@v4
+
+      - name: 'Vulnerability Check'
+        uses: golang/govulncheck-action@v1
+        with:
+          check-latest: true
+
+      - name: 'Setup Go'
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.14'
+          check-latest: true
+
+      - name: 'Unit Test'
+        run: |
+          go test hello-world_test.go
+      
+      - name: 'Run test'
+        run : |
+          go run hello-world.go
+    
